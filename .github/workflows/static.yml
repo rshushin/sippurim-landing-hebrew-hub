@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: 18
       - name: Install dependencies
-        run: npm install
+        run: npm ci  # Using ci instead of install for more reliable builds
       - name: Build
         run: npm run build
       - name: Setup Pages
@@ -36,7 +36,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'  # Deploy the dist folder
+          path: './dist'  # Important: deploying the dist folder
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
