@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { BookOpen } from "lucide-react";
+import { MessageSquare, BookOpen } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -18,9 +18,17 @@ export const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-          <Button size="lg" className="bg-primary hover:bg-primary/90">
-            <BookOpen className="mr-2 h-5 w-5" />
-            Начать
+          <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
+            <a href="https://t.me/Sippurim_Bot" target="_blank" rel="noopener noreferrer">
+              <BookOpen className="mr-2 h-5 w-5" />
+              Начать обучение
+            </a>
+          </Button>
+          <Button size="lg" variant="outline" asChild>
+            <a href="https://t.me/sippurim" target="_blank" rel="noopener noreferrer">
+              <MessageSquare className="mr-2 h-5 w-5" />
+              Присоединиться к каналу
+            </a>
           </Button>
         </div>
 
