@@ -7,7 +7,7 @@ export const Hero = () => {
     <section className="min-h-[80vh] flex flex-col items-center justify-center px-4 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent pointer-events-none" />
       
-      <div className="text-center space-y-6 animate-fade-up">
+      <div className="text-center space-y-6 animate-fade-up mt-10">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
           Изучайте иврит через <br />
           <span className="text-primary">истории и песни</span>
